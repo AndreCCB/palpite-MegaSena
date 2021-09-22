@@ -116,7 +116,7 @@
 				let _game = [... new Set(game)];
 				if(_game.length == 6){
 					let sorte =`Palpite : ${game[0]}-${game[1]}-${game[2]}-${game[3]}-${game[4]}-${game[5]}`;
-					//let tela = document.querySelector(".palpite");
+					let tela = document.querySelector(".palpite");
 					let new_elem = document.createElement('div');
 					new_elem.classList.add("box");
 					new_elem.textContent = sorte;
@@ -127,7 +127,8 @@
 		}
 		var btn =  document.querySelector(".button");
 		btn.addEventListener("click",(e)=>{
-		mega(); 
+		document.location.reload(true);
+		 mega(); 
 		})
 		mega();
 	</script>
